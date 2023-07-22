@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable/ custom properties</title>
+    <style>
+        :root{
+            --primaary-colour:blueviolet;
+            --danger-colour:red;
+            --maxw:755px;
+        }
+        .box{
+            --box-colour:blueviolet;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-colour);
+            box-shadow: 3px 3px green;
+            border: 2px solid red;
+            margin: 2px 4px;
+        }
+        .container{
+            display: flex;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-colour);
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

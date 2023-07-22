@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+
+        }
+        .box{
+            border: 2px solid black;
+            transform: translate(134px,56px);
+            transform-origin: 0;
+            /* transform: scale(3,5); */
+            /* transform: scalex(4); */
+            /* transform: scaley(5); */
+            /* transform: skew(4deg,6deg); */
+            display: inline-block;
+            transform: rotateX(45deg);
+
+        }
+        img{
+            width: 250px;
+            height: 550px;
+            /* transition-property: width; */
+            /* transition-duration:.3s; */
+            /* transition-timing-function: ease-in; */
+            transition: width 1s ease-in-out, height 4s ease-in;
+        }
+        img:hover{
+            width: 200px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img id="myImage" src="mahadev.jpg" alt="">
+        <button id="btn">
+            Toogle
+        </button>
+        </div>
+
+    </div>
+</body>
+<script>
+    myImage.style.width = "250px";
+    myImage.style.height = "550px"
+btn.addEventListener("click", ()=>{
+    if(myImage.style.width === "846px"){
+        myImage.style.width = "250px";
+        myImage.style.height = "550px"
+    }
+    else if(myImage.style.width === "250px"){
+        myImage.style.width = "846px";
+    }
+})
+</script>
+</html>

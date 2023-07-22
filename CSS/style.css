@@ -1,0 +1,22 @@
+#first {
+    background-color: rgb(79, 79, 116);
+}
+.bg-blue{
+    background-color: rgb(146, 53, 146);
+    color: white;
+}
+.red{
+    background-color:#1c0b0b;
+    color: white;
+    height: 50px;
+}
+.green{
+    background-color: green;
+    color: aliceblue;
+    height: 60px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+

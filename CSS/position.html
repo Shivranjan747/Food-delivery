@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        .container {
+            background-color:#887171 ;
+            border: 2px solid black;
+            height: 1234px;
+        }
+    .box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+    }
+    #box3{
+    position: sticky;
+    top: 3px;
+    /* float: right; */
+
+
+    /* position: fixed; */
+    /* top : 40px; top and left values are relative to the parent container */
+    /* left: 600px; */
+    /* bottom: 2px; */
+     }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+</html>
